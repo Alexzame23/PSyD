@@ -1,0 +1,66 @@
+18:37:26 **** Clean-only build of configuration Debug for project lab12-cyclic ****
+cs-make clean 
+cs-rm -rf  lab12-cyclic.siz  ./lab12-cyclic.o  ./lab12-cyclic.d  lab12-cyclic.hex  lab12-cyclic.lst  lab12-cyclic.elf
+' '
+
+18:37:26 Build Finished (took 189ms)
+
+18:37:26 **** Build of configuration Debug for project lab12-cyclic ****
+cs-make all 
+'Building file: ../lab12-cyclic.c'
+'Invoking: ARM Sourcery Windows GCC C Compiler'
+arm-none-eabi-gcc -I.. -I../../BSP/include -I../os_core -I../os_port -O0 -Wall -Wa,-adhlns="lab12-cyclic.o.lst" -c -fmessage-length=0 -mapcs-frame -MMD -MP -MF"lab12-cyclic.d" -MT"lab12-cyclic.d" -mcpu=arm7tdmi -g3 -gdwarf-2 -o "lab12-cyclic.o" "../lab12-cyclic.c"
+../lab12-cyclic.c:104:6: warning: return type of 'main' is not 'int'
+'Finished building: ../lab12-cyclic.c'
+' '
+'Building target: lab12-cyclic.elf'
+'Invoking: ARM Sourcery Windows GCC C Linker'
+arm-none-eabi-gcc -T"../lab12-cyclic.ld" -nostartfiles -L../../BSP/Debug -Wl,-Map,lab12-cyclic.map -mcpu=arm7tdmi -g3 -gdwarf-2 -o "lab12-cyclic.elf"  ./lab12-cyclic.o   -lBSP
+'Finished building target: lab12-cyclic.elf'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Flash Image'
+arm-none-eabi-objcopy -O binary lab12-cyclic.elf  "lab12-cyclic.hex"
+'Finished building: lab12-cyclic.hex'
+' '
+'Invoking: ARM Sourcery Windows GNU Create Listing'
+arm-none-eabi-objdump -h -S lab12-cyclic.elf > "lab12-cyclic.lst"
+'Finished building: lab12-cyclic.lst'
+' '
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab12-cyclic.elf
+   text	   data	    bss	    dec	    hex	filename
+  29344	      9	  38428	  67781	  108c5	lab12-cyclic.elf
+'Finished building: lab12-cyclic.siz'
+' '
+18:38:49 **** Incremental Build of configuration Debug for project lab0 ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab0.elf
+   text	   data	    bss	    dec	    hex	filename
+   5076	      0	      0	   5076	   13d4	lab0.elf
+'Finished building: lab0.siz'
+' '
+18:39:23 **** Incremental Build of configuration Debug for project lab12-cyclic ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab12-cyclic.elf
+   text	   data	    bss	    dec	    hex	filename
+  29344	      9	  38428	  67781	  108c5	lab12-cyclic.elf
+'Finished building: lab12-cyclic.siz'
+' '
+18:50:00 **** Incremental Build of configuration Debug for project lab12-cyclic ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab12-cyclic.elf
+   text	   data	    bss	    dec	    hex	filename
+  29344	      9	  38428	  67781	  108c5	lab12-cyclic.elf
+'Finished building: lab12-cyclic.siz'
+' '
+18:50:08 **** Incremental Build of configuration Debug for project lab12-cyclic ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab12-cyclic.elf
+   text	   data	    bss	    dec	    hex	filename
+  29344	      9	  38428	  67781	  108c5	lab12-cyclic.elf
+'Finished building: lab12-cyclic.siz'
+' '

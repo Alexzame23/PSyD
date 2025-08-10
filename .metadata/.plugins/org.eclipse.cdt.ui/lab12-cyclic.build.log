@@ -1,0 +1,11 @@
+18:50:08 **** Incremental Build of configuration Debug for project lab12-cyclic ****
+cs-make all 
+'Invoking: ARM Sourcery Windows GNU Print Size'
+arm-none-eabi-size  --format=berkeley lab12-cyclic.elf
+   text	   data	    bss	    dec	    hex	filename
+  29344	      9	  38428	  67781	  108c5	lab12-cyclic.elf
+'Finished building: lab12-cyclic.siz'
+' '
+
+18:50:08 Build Finished (took 313ms)
+
